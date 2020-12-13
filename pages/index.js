@@ -1,6 +1,7 @@
 import Head from 'next/head'
-import DashBoard from './DashBoard'
+import DashBoard from './dashboard'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -12,9 +13,13 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <Link href="/pages/dashboard">
+          <p>Punch Master</p>
+        </Link>
+        <h1 className="title">
+          Read{' '}
+          <a>Punch Master</a>
+        </h1>       
 
         <p className={styles.description}>
           Get started by editing{' '}
