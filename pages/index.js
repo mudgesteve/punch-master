@@ -13,13 +13,14 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Link href="/pages/dashboard">
-          <p>Punch Master</p>
-        </Link>
         <h1 className="title">
           Read{' '}
           <a>Punch Master</a>
         </h1>       
+
+        <Link to="./pages/DashBoard.js">
+          <a href="./pages/DashBoard.js">Punch Master</a>
+        </Link>
 
         <p className={styles.description}>
           Get started by editing{' '}
@@ -57,7 +58,7 @@ export default function Home() {
         </div>
 
         <DashBoard />
-        
+
       </main>
 
       <footer className={styles.footer}>
