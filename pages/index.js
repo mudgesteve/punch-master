@@ -1,12 +1,12 @@
 import Head from 'next/head'
-import DashBoard from './dashboard'
+import DashBoard from './DashBoard'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <DashBoard />
+      
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -55,6 +55,9 @@ export default function Home() {
             </p>
           </a>
         </div>
+
+        <DashBoard />
+        
       </main>
 
       <footer className={styles.footer}>
